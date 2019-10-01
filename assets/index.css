@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.imagePortada{
+    background-image: url('../images/portada3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: center;
+
+}
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+.portada{
+    border: 1px solid red;
+    width: 100%;
+    display: grid;
+    grid-template: 100px 75vh / 20% 60% 20%;
+}
+
+.element{
+    border: 1px solid blue;
+}
+.logo{
+    
+}
