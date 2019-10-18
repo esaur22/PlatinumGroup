@@ -5,25 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Platinum Group</title>
+   
+  
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./icons/style.css">
     <link rel="stylesheet" href="assets/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/platiIcon/apple-touch-icon.png">
+    <link rel="" type="image/png" sizes="32x32" href="./images/platiIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/platiIcon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
+        
     <div class="madre">
-        <div class="imagePortada">
-            
+        <div class="imagePortada" id="imagePortada">
+             
             <div class="wrapper">
                 <div class="portada">
-                    <div class="element logo">
-                        <img src="./images/logo.png" alt="">
+                    <div class="cabeza">
+
+                        <div class="element logo">
+                            <div class="imgContainer">
+                                <img src="./images/logo3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="element menu">
+                            <a href="index.html"><div class="btn home">Home</div></a>
+                            <a href="index.html"><div class="btn proyectos">Proyectos</div></a>
+                            <a href="index.html"><div class="btn cotizar">Cotizar</div></a>
+                            <a href="index.html"><div class="btn nosotros">Sobre Nosotros</div></a>
+                            <a href="index.html"><div class="btn contacto">Contacto</div></a>
+                            <a href="index.html"><div class="btn convivienda">Convivienda</div></a>
+                            <div class="numeroContainer">
+                                <a href="tel:504278538444">Llamar: 2785-3844</a><span class="icon-phone"></span>
+                                </div>
+                                <span id="burgerButton" class="icon-list burger-button" ></span>
+                        </div>
                     </div>
-                    <div class="element"></div>
-                    <div class="element"></div>
-                    <div class="element"></div>
-                    <div class="element"></div>
-                    <div class="element"></div>
-                </div>
+                
+                   
+                    <div class="form">
+                        <div class="dataRequest">
+                            <h3>Dejanos Llamarte</h3>
+                            <p>Te ayudaremos a escoger tu hogar</p>
+                            <form action="" method="post">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Su Nombre">
+                                <label for="numero">Número de telefono</label>
+                                <input type="tel" name="numero" id="numero" placeholder="Su Número">
+                                <label for="mensaje">Mensaje (opcional)</label>
+                                <textarea name="mensaje" id="mensaje" cols="10" rows="2" placeholder="Su Mensaje"></textarea>
+                                <input type="submmit" value="Enviar" id="enviar">
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                
             </div>
         </div>
+        <div class="imgFondo">
+            <div class="wrapper">
+                <div class="contenido">
+                    <div class="logosYTema">
+                        <div class="logovf">
+                            <img src="./images/logo vf.png" alt="Logo Villa Florencia" srcset="">
+                        </div>
+                        <div class="tema">
+                        <p>Escoge tu hogar</p>
+                    </div>
+                            
+                        <div class="logoConvivienda">
+                            <img src="./images/convivienda.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="modelos">
+                          
+                        <div class="siena modelo">
+                               
+                            <div class="sienaImg modeloImg">
+                                <img src="./images/Siena.jpg" alt="Modelo Siena" srcset="">
+                            </div>
+                            <div class="sienaText descripcionCasa">
+                                                                    <h3>Modelo Siena</h3>
+                                <p>Compra este modelo con una hermosa fachada clásica, reservalo ahora!!</p>
+                            </div>
+                            <div class="grilla">
+                                    <div class="elemento 1"><p>Habitaciones</p></div>
+                                    <div class="elemento 2"><p>Baños</p></div>
+                                    <div class="elemento 3"><p>Tamaño</p></div>
+                                    <div class="elemento 4 iconP"><span class="icon-sleepy"></span><p>2</p></div>
+                                    <div class="elemento 5 iconP"><span class="icon-man-woman"></span><p>1</p></div>
+                                    <div class="elemento 6 iconP"><span class="icon-codepen"></span><p>70 mts&sup2;</p></div>
+                                </div>
+                        </div>
+                        
+                        <div class="milan modelo">
+                            <div class="milanImg modeloImg">
+                                <img src="./images/milan.jpg" alt="Modelo Milan" srcset="">
+                            </div>
+                            <div class="milanText descripcionCasa">
+                                <h3>Modelo Milan</h3>
+                                <p>Disfruta de un diseño minimalista y amplio en Villa Florencia, escoge este acogedor modelo</p>
+                            </div>
+                        <div class="grilla">
+                            <div class="elemento 1"><p>Habitaciones</p></div>
+                            <div class="elemento 2"><p>Baños</p></div>
+                            <div class="elemento 3"><p>Tamaño</p></div>
+                            <div class="elemento 4 iconP"><span class="icon-sleepy"></span><p>2</p></div>
+                            <div class="elemento 5 iconP"><span class="icon-man-woman"></span><p>1</p></div>
+                            <div class="elemento 6 iconP"><span class="icon-codepen"></span><p>70 mts&sup2;</p></div>
+                        </div>
+
+                        </div>
+                            <div class="catania modelo">
+                                <div class="cataniaImg modeloImg">
+                                    <img src="./images/catania.jpg" alt="Modelo catania" srcset="">
+                                </div>
+                                <div class="cataniaText descripcionCasa">
+                                    <h3>Modelo Catania</h3>
+                                    <p>Disfruta del modelo mas acogedor y destacado de Villa Florencia, modelo que aprovecha al maximo el espacio con su conveniente distribución</p>
+                                </div>
+                                <div class="grilla">
+                                        <div class="elemento 1"><p>Habitaciones</p></div>
+                                        <div class="elemento 2"><p>Baños</p></div>
+                                        <div class="elemento 3"><p>Tamaño</p></div>
+                                        <div class="elemento 4 iconP"><span class="icon-sleepy"></span><p>2</p></div>
+                                        <div class="elemento 5 iconP"><span class="icon-man-woman"></span><p>1</p></div>
+                                        <div class="elemento 6 iconP"><span class="icon-codepen"></span><p>70 mts&sup2;</p></div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+            
+        </div>
+               
+        <div class="wrapper comen">
+            <div class="contenido2">
+                    <div class="grillaComen">
+                        <div class="comentarios grid">
+                            <div class="contenedor">
+                                <div class="testimoniosTema">
+                                    <h3>Comentarios</h3>
+                                </div>
+                            </div>
+                            <div class="comentariosCli">
+                                <h4>Jessica García</h4>
+                                <h5>Diseñadora Gráfica</h5>
+                                <p>"Gracias a Dios por sus bendiciones, por abirir puertas, y gracias a esta empresa por haber hecho uno de nuestros sueños realidad. Excelente trabajo. Infinitas gracias Platinum Group"</p>
+                            </div>
+                        </div>
+                        <div class="adquirido grid">
+                            <div class="modeloObtenido obtenidoCata">
+                                <h3>Modelo Obtenido</h3>
+                                    <div class="catania modeloAd">
+                                            <div class="cataniaImg modeloImg">
+                                                <img src="./images/jessica.jpg" alt="Modelo catania" srcset="" height="">
+                                            </div>
+                                            <div class="cataniaAd descripcionCasa">
+                                                <h3>Modelo Catania</h3>
+                                            </div>
+                                          
+                                    </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+        </div>
+        <footer>
+            <div class="info">
+                    <div class="logo2">
+                            <div class="imgContainerPla">
+                                <img src="./images/logo2.png" alt="">
+                            </div>
+                        </div>
+                    <div class="contacto">
+                        <div class="ubicacion distriDatos">
+                                <span class="icon-location"></span><p>Boulevard Los Poetas, entre 4ta y 5ta avenida, media cuadra al este de Banhcafe, <br>Juticalpa, Olancho</p>
+                        </div>
+                        <div class="telefono distriDatos">
+                                <span class="icon-phone"></span><a href="tel:504278538444">Contacto: 2785-3844</a>
+                        </div>
+                        <div class="whatsapp distriDatos">
+                                <span class="icon-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=50495512926&text=Hola%quiero%info">95512926</a>
+                        </div>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/esau97/" target="_blank" rel="noopener noreferrer"><span class="icon-facebook"> </span></a>
+                    </div>
+            </div>
+        </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
