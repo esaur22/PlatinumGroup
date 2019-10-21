@@ -509,6 +509,9 @@ footer{
 .info p, .info a{
     font-size: 13px;
 }
+.facebook a{
+    font-size: 35px;
+}
 }
 
 
