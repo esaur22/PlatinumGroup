@@ -4,9 +4,7 @@ var index = 0;
     var listaimg = ["./images/sienaPortada.jpg", "./images/catania2.jpg", "./images/catania3.jpg", "./images/catania4.jpg", "./images/milan2.jpg", "./images/catania8.jpg", "./images/catania9.jpg", "./images/catania11.jpg", "./images/catania12.jpg", "./images/catania14.jpg", "./images/catania15.jpg", "./images/catania16.jpg", "./images/catania10.jpg", "./images/catania17.jpg", "./images/portada3.jpg"];
 
 function interval(){
-  
-    setInterval(changeImage, 3000);
-  
+  setInterval(changeImage, 3000);
 };
 
 function changeImage() {
