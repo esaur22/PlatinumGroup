@@ -103,5 +103,68 @@ function fadeImages(){
  
 }
 
+//<--OVERLAY DE IMAGENES -->
+
+//Overlay de Pestaña Milan
+var overlay = document.getElementById('overlay');//Seleccion del overlay
+// console.log(overlay)
+var close = document.querySelector('.icon-cross'); //Seleccion del boton de cerrado del Overlay
+// console.log(close);
+var body = document.getElementById('body');//Seleccion del body para desactivar el scroll al ampliar las fotos
+
+var mostrarBtn = document.getElementsByClassName('imageDiv')//Seleccion del boton de abierto del overlay
+console.log(mostrarBtn);
+console.log(mostrarBtn[1]);
+
+var modal = document.getElementById('modal');//El Modal
+//Ejecucion Boton de cerrado del Overlay
+close.addEventListener('click', cerrarFunction);
+function cerrarFunction(){
+overlay.style.visibility = 'hidden'//Escondemos el overlay;
+body.style.overflowY = 'visible';//Activamos el scroll vertical
+modal.classList.remove('modalAnimation');
+
+}
+
+//Ejecucion del boton de abierto del Overlay 'Milan'
+console.log()
+var imagen;
+var i;
+var index;
+
+
+mostrarBtn[0].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte1.jpeg)`;
+    expandirFunction();
+});
+mostrarBtn[1].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte2.jpeg)`;
+    expandirFunction();
+});
+mostrarBtn[2].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte3.jpeg)`;
+    expandirFunction();
+});
+mostrarBtn[3].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte4.jpeg)`;
+    expandirFunction();
+});
+mostrarBtn[4].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte5.jpeg)`;
+    expandirFunction();
+});
+mostrarBtn[5].addEventListener('click', function(){
+    modal.style.backgroundImage =  `url(./images/inteMilan/inte6.jpeg)`;
+    expandirFunction();
+});
+
+function expandirFunction(n){
+    overlay.style.visibility = 'visible';
+    // modal.style.backgroundImage =  `url(./images/inteMilan/inte${n}.jpeg)`;
+    modal.classList.add('modalAnimation');
+    body.style.overflowY = 'hidden';//Activamos el scroll vertical
+    // elegirUrl();
+    // alert('funciono')
+}
 
 
