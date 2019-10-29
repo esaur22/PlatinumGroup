@@ -253,7 +253,12 @@ width: 100%;
     padding-left: 5%;
     padding-right: 5%; 
 }
-.descripcionCasa h3:hover{
+
+.descripcionCasa a{
+    text-decoration: none;
+    color: black;
+}
+.descripcionCasa a:hover{
     color:var(--verde-hover);
     transition: .2s all ease-in-out;
     cursor: pointer;
