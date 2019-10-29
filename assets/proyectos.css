@@ -697,6 +697,9 @@ footer{
         margin-top: 10px;
         height: 260px;
     }
+   .burger-button{
+       left: 85%;
+   }
     
     
 }

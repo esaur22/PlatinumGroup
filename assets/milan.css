@@ -229,6 +229,7 @@ h2{
     /* opacity: 0.5; */
     
     
+    
 }
 .modalAnimation{
     animation: modalIn .5s ease;
@@ -247,12 +248,9 @@ h2{
    border-radius: 4px;
    padding: 5px;
    /* width: 150px; */
+ 
 }
-.imageDiv:hover,
-.imageDiv:focus{
-  transform: scale(1.2);
-  /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
-}
+
 .imageDiv:active .imagContainer span{
     color: black;
     font-size: 1.2em;
@@ -333,6 +331,45 @@ text-decoration: none;
 .precio a:hover{
     text-decoration: underline;
 }
+/* Aqui comienza el SiguienteAnte */
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F7F7F7;
+    border-bottom:1px solid #F7F7F7;
+}
+.grisSuave a{
+    color: #E6E6E6;
+}
+.enlaces a{
+    text-decoration: none;
+}
+.conju1, .conju2{
+    display: flex;
+}
+.iconNextPre{
+    align-items: center;
+    display: flex;
+}
+.iconNextPre a{
+    color: #F7F7F7;
+    font-size: 3em;
+}
+.conju1:hover .iconRegre a, .conju1:hover .regresar a, .conju2:hover .iconSigui a, .conju2:hover .siguiente a{
+    color:#00367B;
+}
+
+.iconRegre span{
+   
+    margin-right: 10px;
+}
+.iconSigui Span{
+    margin-left: 10px;
+}
+.final{
+    text-align: end;
+}
+/* Aqui Termina el SiguienteAnte */
 footer{
     background-color: #303030;
     color: #808080;
@@ -629,6 +666,20 @@ footer{
 .none{
     /* display: none; */
 }
+.modal{
+    width: 90%;
+    height: 90%;
+    line-height: 100%;
+    position: absolute;
+}
+.cerrar span{
+    top: -1%;
+    color: grey;
+    left: 80%;
+    position: relative;
+    top: 7px;
+    font-size: 20px;
+}
 .boxSliceContainer{
     height: 500px;
 }
@@ -691,6 +742,11 @@ footer{
     body{
         font-size:10px;
 }
+.cerrar span{
+    
+    left: 75%;
+  
+}
 
     
     
@@ -698,5 +754,8 @@ footer{
 @media screen and (max-width:325px) {
     .boxSliceContainer{
         height: 250px;
+    }
+    .final2{
+        text-align: end;
     }
 }

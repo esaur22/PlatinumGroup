@@ -25,6 +25,7 @@ var body = document.getElementById('body');//Seleccion del body para desactivar 
 var mostrarBtn = document.querySelector('.enlarge')//Seleccion del boton de abierto del overlay
 var modal = document.getElementById('modal');//El Modal
 //Ejecucion Boton de cerrado del Overlay
+overlay.addEventListener('click', cerrarFunction);
 close.addEventListener('click', cerrarFunction);
 function cerrarFunction(){
 overlay.style.visibility = 'hidden'//Escondemos el overlay;

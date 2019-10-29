@@ -118,6 +118,7 @@ console.log(mostrarBtn[1]);
 
 var modal = document.getElementById('modal');//El Modal
 //Ejecucion Boton de cerrado del Overlay
+overlay.addEventListener('click', cerrarFunction);
 close.addEventListener('click', cerrarFunction);
 function cerrarFunction(){
 overlay.style.visibility = 'hidden'//Escondemos el overlay;
