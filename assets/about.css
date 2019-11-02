@@ -123,7 +123,7 @@ body{
 }
 .fondo{
     background-color: #F7F7F7;
-    font-size: 1em;
+    
 }
 .descripcionProyectos{
     /* margin-top: 40px; */
@@ -135,107 +135,30 @@ body{
     margin-bottom: 150px;
 }
 /*---------------------------------------------------- CUERPO DE LA PAGINA --------------------------------------------*/
-
-.formDatos{
-    background-color: white;
-    padding: 40px;
-    display: flex;
-    
-    justify-content: space-around;
-    
-}
-.form{
-    width: 60%;
-}
-.form form{
-    display: flex;
-    flex-direction: column;
-}
-.form form label{
-    padding-bottom: 5px;
-    padding-top: 13px;
-}
-.form form input[type="text"],[type="email"],[type="tel"]{
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border:1px solid rgba(128, 128, 128, 0.2);
-    color: #808080;
-    font-family: var(--fuente);
-    border-bottom: 1px solid ;
-    
-    transition: 0.5s ease-in-out;
-    
-}
-.form form input[type="text"]:hover, .form form input[type="email"]:hover, .form form input[type="tel"]:hover{
-    border: none;
-    border-bottom: 2px solid #1EA69A;
-    
-}
-.form form textarea{
-    resize: none;
-    border:1px solid rgba(128, 128, 128, 0.2);
-    padding: 12px 20px;
-    color: #808080;
-    box-sizing: border-box;
-    font-family: var(--fuente);
-    border-bottom: 1px solid ;
-    transition: 0.5s;
-}
-.form form textarea:hover{
-   
-    border-bottom: 2px solid #1EA69A;
-}
-#submit{
-    color: white;
-    width: 100px;
-    margin-top: 30px;
-    padding: 12px 20px;
-    border: none;
-    background-color: #1EA69A;
-    transition: 0.2s all linear;
-    font-family: var(--fuente);
-}
-#submit:hover{
-    background-color:#10655E;
-}
-.datos{
-    padding-top: 15px;
-    margin-left: 30px;
-}
-.conjunto{
-    padding-bottom: 20px;
-}
-.iconContainer p{
-    margin: 0;
-    display: inline;
-    padding-left: 5px;
-    font-weight: normal;
-    
-}
-
-.iconContainer span{
-    color: #808080;
-    font-size: 1.3em;
-}
-.dato{
-    padding-left: 1.9em;
-}
-.dato a{
-    color: #808080;
-    text-decoration: none;
-    transition: 0.2s all linear;
-}
-.dato a:hover{
-    color: #1EA69A;
-}
-
-.mapa{
-    display: flex;
-    justify-content: center;
-    height: 700px;
-    background-color: white;
-    padding-bottom: 70px;
+.descripcion{
     margin-bottom: 70px;
+}
+.descripcion p{
+    margin: 0;
+    font-size: 1em;
+    
+}
+.valores{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.valor{
+    width: 25%;
+}
+.imagContainer img{
+    width: 100%;
+}
+.descripcionImg{
+text-align: center;
+width: 100%;
 }
 /*----------------------------------------------- FIN DEL CUERPO DE LA PAGINA --------------------------------------------*/
 
@@ -372,6 +295,7 @@ footer{
         transform: rotate(0deg);
     }
 }
+
 @media screen and (max-width:1440px) {
 .info{
     max-width: 90vw;
@@ -385,172 +309,172 @@ footer{
 }
 @media screen and (max-width:1024px) {
 body{
-font-size: 14px;
-}
-  .wrapper{
-    max-width: 90vw;
-    margin: 0 auto;
-    /* background-image: url('../images/portada3.jpg'); */
+    font-size: 14px;
+    }
+      .wrapper{
+        max-width: 90vw;
+        margin: 0 auto;
+        /* background-image: url('../images/portada3.jpg'); */
+        }
+        
+    .menu{
+        padding-right: 4px;
+        
+    }
+    .menu div{
+        font-size: 15px;
+        padding: 0%;
+    }
+    .menu a{
+        font-size: 15px;
     }
     
-.menu{
-    padding-right: 4px;
     
-}
-.menu div{
-    font-size: 15px;
-    padding: 0%;
-}
-.menu a{
-    font-size: 15px;
-}
-
-
-.info{
-    width: 100vh;
-}
-.info p, .info a{
-    font-size: 13px;
-}
-.facebook a{
-    font-size: 35px;
-}
-}
-
-@media screen and (max-width:900px) {
-    .menu a .btn, .numeroContainer a{
-        font-size: 0.9em;
+    .info{
+        width: 100vh;
+    }
+    .info p, .info a{
+        font-size: 13px;
+    }
+    .facebook a{
+        font-size: 35px;
     }
 }
-
-@media screen and (max-width:768px) {
-.menu{
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    left: 100vw;
-    top: 0%;
-    background-color: rgba(125,200,0, 0.9);
-    /* background-color: rgba(29,209,161, 0.7); */
-    width: 100vw;
-    z-index: 1;
-    font-weight: bold;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transition: .5s ;
     
-    
+    @media screen and (max-width:900px) {
+        .menu a .btn, .numeroContainer a{
+            font-size: 0.9em;
+        }
     }
-.numeroContainer{
-    height: initial;
-    width: auto;
-}
-.numeroContainer a{
-    width: auto;
-}
-.menu div{
-    font-size: 30px;
-}
-.btn{
-    margin-bottom: 10px;
-    color: white;
-          
-}
-
-.menu a{
-    color: white;
-    font-size: 30px;
-}
-.menu span{
-    color: white;
-    font-size: 20px;
-}
-.burger-button{
-    display: block;
     
-}
-.menu.is-active{
-    left: 0;
-}
-
-.none{
-    display: none;
-}
-
-.portada{
-    /* border: 1px solid red; */
-    width: 100%;
-    /* position: relative; */
-    height: 90vh;
-}
-
-.info{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.contacto{
-    padding-left: 10px;
-}
-.facebook a{
-    font-size: 30px;
-}
-
-}
-@media screen and (max-width:725px) {
-    
-}
-@media screen and (max-width:695px) {
-  
-}
-@media screen and (max-width:630px) {
-    .logosYTema{
+    @media screen and (max-width:768px) {
+    .menu{
+        display: flex;
+        position: fixed;
         flex-direction: column;
+        left: 100vw;
+        top: 0%;
+        background-color: rgba(125,200,0, 0.9);
+        /* background-color: rgba(29,209,161, 0.7); */
+        width: 100vw;
+        z-index: 1;
+        font-weight: bold;
+        height: 100vh;
         justify-content: center;
         align-items: center;
+        transition: .5s ;
+        
+        
+        }
+    .numeroContainer{
+        height: initial;
+        width: auto;
     }
-    .formDatos{
-        flex-wrap: wrap;
-    } 
-    .form{
-        width: 100%;
+    .numeroContainer a{
+        width: auto;
     }
-    .datos{
-        padding-top: 0;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 100%;
+    .menu div{
+        font-size: 30px;
     }
-
-}
-
-
-@media screen and (max-width:425px) {
- 
-   .burger-button{
-       left: 85%;
-   }
-   .info{
-       flex-wrap: wrap;
-       justify-content: center;
-   }
+    .btn{
+        margin-bottom: 10px;
+        color: white;
+              
+    }
     
-    
-}
-@media screen and (max-width:375px) {
     .menu a{
+        color: white;
+        font-size: 30px;
+    }
+    .menu span{
         color: white;
         font-size: 20px;
     }
+    .burger-button{
+        display: block;
+        
+    }
+    .menu.is-active{
+        left: 0;
+    }
     
-}
-@media screen and (max-width:320px) {
-    body{
-        font-size: 12px;
+    .none{
+        display: none;
     }
-}
-@media screen and (max-width:280px) {
-    body{
-        font-size: 10px;
+    
+    .portada{
+        /* border: 1px solid red; */
+        width: 100%;
+        /* position: relative; */
+        height: 90vh;
     }
-}
+    .valores{
+        flex-wrap: wrap;
+        
+    }
+    .valor{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .integridad, .responsabilidad{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .info{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .contacto{
+        padding-left: 10px;
+    }
+    .facebook a{
+        font-size: 30px;
+    }
+    
+    }
+    @media screen and (max-width:725px) {
+        
+    }
+    @media screen and (max-width:695px) {
+      
+    }
+    @media screen and (max-width:630px) {
+        .logosYTema{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      
+    }
+    
+    
+    @media screen and (max-width:425px) {
+     
+       .burger-button{
+           left: 85%;
+       }
+       .info{
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+        
+        
+    }
+    @media screen and (max-width:375px) {
+        .menu a{
+            color: white;
+            font-size: 20px;
+        }
+        
+    }
+    @media screen and (max-width:320px) {
+        body{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:280px) {
+        body{
+            font-size: 10px;
+        }
+    }

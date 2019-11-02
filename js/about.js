@@ -6,5 +6,4 @@ const menuButton = document.querySelector('.icon-list');
 function hideShow(){
     menu.classList.toggle('is-active');
 }
-
 menuButton.addEventListener('click', hideShow);
